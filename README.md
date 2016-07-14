@@ -5,6 +5,7 @@ Dockerfile is coming from daedelus/prestashop-web
 The initial solution coming from Jonathan Temlett and  is here :  http://www.mytutorials.co.za/2015/07/creating-prestashop-environment-in.html
 
 To use it with docker-compose :
+
 1. Pull this repo on your server
 
 2. Fill in the docker-compose.yml with your own data
