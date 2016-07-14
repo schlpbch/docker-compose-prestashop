@@ -15,19 +15,18 @@ To use it with docker-compose :
 
 4. Open your browser and go on your site
 
-5. Follow the instruction : please fill in with the mandatory  
-     variable :
-     HOST: mysql
-    PASSWORD: <yourrootpassword>
-    As you like for the remaining item
+5. Follow the instruction : please fill in with the mandatory variable (As you like for the remaining item) :
+   
+   HOST: mysql
+   PASSWORD: <yourrootpassword>
 
- !!!! Prestashop ask you to create a database because it find nothing at all. Without this  question, do it directly in command line with docker exec (cf tuto daedelus)
+!!!! Prestashop ask you to create a database because it find nothing at all. Without this  question, do it directly in command line with docker exec (cf tuto daedelus)
 
- 6. After installing, go into your running container to change the admin folder name et delete the install folder :
+6. After installing, go into your running container to change the admin folder name et delete the install folder :
 
- docker exec -it <yourrunningprestashopcontainer> /bin/bash
- You are now in your runngin container
+docker exec -it <yourrunningprestashopcontainer> /bin/bash
+You are now in your runngin container
 
- Command to execute :
- mv /var/www/site/prestashop/admin /var/www/site/prestashop/admin231212321
- rm -rf /var/www/site/prestashop/install
+Command to execute :
+mv /var/www/site/prestashop/admin /var/www/site/prestashop/<youradminname>
+rm -rf /var/www/site/prestashop/install
