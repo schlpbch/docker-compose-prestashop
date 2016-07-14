@@ -1,0 +1,22 @@
+prestashop:
+    build: .    
+    restart: always
+    ports:
+      - "80:80"
+    environment:
+      VIRTUAL_HOST: <yourhostdomain>
+    links:
+      - db:mysql
+    volumes:
+      - ./html:/var/www/html
+
+db:
+    image: mysql
+    volumes:
+     - ./db:/var/lib/mysql
+    environment:
+     MYSQL_ROOT_PASSWORD: <yourrootpassword>
+#     MYSQL_USER: <yourname>
+#     MYSQL_PASSWORD: <yourpassword>
+#     MYSQL_DATABASE: <yourdatabase>
+
