@@ -15,10 +15,10 @@ To use it with docker-compose :
 
 4. Open your browser and go on your site
 
-5. Follow the instruction : please fill in with the mandatory variable (As you like for the remaining item) :
+5. Follow the instruction : please fill in with the mandatory variable (as you like for the remaining item) :
    
-   HOST: mysql
-   PASSWORD: <yourrootpassword>
+  HOST: mysql 
+  PASSWORD: yourrootpassword
 
 !!!! Prestashop ask you to create a database because it find nothing at all. Without this  question, do it directly in command line with docker exec (cf tuto daedelus)
 
