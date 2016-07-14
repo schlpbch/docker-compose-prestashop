@@ -1,7 +1,7 @@
 # docker-compose-prestashop
 The easiest way to install prestashop with multiple containers and persistent data thanks to docker-compose
 
-Dockerfile is coming from daedelus/prestashop-web 
+Dockerfile is coming from daedelus/prestashop-web.
 The initial solution coming from Jonathan Temlett and  is here :  http://www.mytutorials.co.za/2015/07/creating-prestashop-environment-in.html
 
 To use it with docker-compose :
@@ -17,7 +17,8 @@ To use it with docker-compose :
 
 5. Follow the instruction : please fill in with the mandatory variable (as you like for the remaining item) :
    
-  HOST: mysql 
+  HOST: mysql
+
   PASSWORD: yourrootpassword
 
 !!!! Prestashop ask you to create a database because it find nothing at all. Without this  question, do it directly in command line with docker exec (cf tuto daedelus)
@@ -28,5 +29,7 @@ docker exec -it <yourrunningprestashopcontainer> /bin/bash
 You are now in your runngin container
 
 Command to execute :
-mv /var/www/site/prestashop/admin /var/www/site/prestashop/<youradminname>
+
+mv /var/www/site/prestashop/admin /var/www/site/prestashop/youradminname
+
 rm -rf /var/www/site/prestashop/install
