@@ -50,6 +50,9 @@ ADD db_structure.sql /var/www/site/prestashop/install/data/db_structure.sql
 
 # Add the logic for page compression
 #ADD .htaccess /var/www/site/prestashop/.htaccess
- 
+
+#Add volumes
+VOLUME /var/www/html
+
 # By default, simply start apache.
 CMD /usr/sbin/apache2ctl -D FOREGROUND;
